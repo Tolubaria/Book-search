@@ -1,6 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { FormControl, FormGroup } from '@angular/forms';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -33,3 +34,18 @@ describe('AppComponent', () => {
     expect(compiled.querySelector('.content span')?.textContent).toContain('book-search-app app is running!');
   });
 });
+
+
+@Component({
+	selector: 'app-root',
+	templateUrl: './app.component.html',
+	styleUrls: ['./app.component.scss'],
+ })
+ export class AppComponent {
+	public adding = false;
+ 
+	public habitForm = new FormGroup({
+	  name: new FormControl(''),
+	  frequency: new FormControl(''),
+	  description: new FormControl(''),
+	});

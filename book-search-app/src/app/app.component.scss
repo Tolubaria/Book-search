@@ -1,3 +1,52 @@
-h1 {
-    color: red;
+.search-block {
+	max-width: 1920px;
+	min-width: 320px;
+	height: 500px;
+	background-image: url(../assets/images/book.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	&__head {
+		padding-top: 90px;
+		text-align: center;
+		color: rgb(8, 8, 8);
+		font-size: 54px;
+	}
+}
+
+.input {
+	margin-left: 40%;
+}
+
+.site-search {
+	max-width: 400px;
+}
+
+.found-block {
+	max-width: 1920px;
+	min-width: 320px;
+	&__head {
+		padding-top: 30px;
+		text-align: center;
+	}
+}
+
+#gsearch {
+	width: 400px;
+	margin-left: 37%;
+}
+
+.list-output {
+	display: flex;
+}
+
+.example-card {
+	max-width: 200px;
+	margin: 0 auto;
+	background-color: #fff8dc
+}
+
+.mat-card-image {
+	max-width: 130px;
+	margin: 30px
 }
